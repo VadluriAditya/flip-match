@@ -1,0 +1,18 @@
+html, body { margin: 0; min-height: 100%; background: #0d0e12; color: #ece7e1; font-family: -apple-system, system-ui, sans-serif; }
+#app { max-width: 460px; margin: 0 auto; padding: 24px 16px 60px; text-align: center; }
+.eyebrow { text-transform: uppercase; letter-spacing: 2px; font-size: 12px; color: #7a8fd8; font-weight: 700; }
+h1 { font-size: 30px; margin: 6px 0 2px; }
+.sub { color: #9a9199; font-size: 14px; margin-bottom: 14px; }
+.stat-row { display: flex; gap: 12px; margin-bottom: 16px; }
+.stat { background: #16151b; border-radius: 10px; padding: 10px 14px; flex: 1; }
+.stat .num { font-size: 20px; font-weight: 800; }
+.stat .label { font-size: 11px; color: #9a9199; text-transform: uppercase; }
+
+.grid { display: grid; gap: 8px; margin: 0 auto; }
+.card { aspect-ratio: 1; border-radius: 10px; display: flex; align-items: center; justify-content: center;
+        font-size: 26px; background: #221f28; cursor: pointer; border: 2px solid #2a2831; user-select: none; }
+.card.up { background: #2c2a40; border-color: #7a8fd8; }
+.card.matched { background: #1e3a2e; border-color: #4a9d6e; opacity: 0.7; cursor: default; }
+
+.overlay { margin-top: 16px; background: #16151b; border: 1px solid #2a2831; border-radius: 12px; padding: 18px; }
+.btn { background: #7a8fd8; color: #0d0e12; border: none; border-radius: 10px; padding: 12px 24px; font-weight: 700; cursor: pointer; margin-top: 10px; }
