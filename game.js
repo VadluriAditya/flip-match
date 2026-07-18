@@ -114,6 +114,10 @@ function render() {
 
 startLevel(Math.min(unlockedLevel, LEVELS.length - 1));
 
+// ponytail: read-only state accessors for external tooling (recording/QA scripts)
+window.LEVELS = LEVELS;
+window.getState = () => ({ deck, matched, moves, won, levelIndex, flippedIdx });
+
 (function selfCheck() {
   const check = (cond, msg) => { if (!cond) console.error("Flip Match self-check FAILED:", msg); };
   LEVELS.forEach((lv, i) => check((lv.cols * lv.rows) % 2 === 0, `level ${i} has an even card count`));
